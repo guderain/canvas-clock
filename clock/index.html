@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .wrap{
+            width: 440px;
+            height: 440px;
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            margin: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 20px whitesmoke;
+            background-color: white;
+            /* 缩放 */
+            transform: scale(0.5, 0.5); 
+        }
+        .canvas{
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            margin: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 20px gray inset ;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <div class="wrap">
+            <canvas class="canvas" width="400px" height="400px"></canvas>
+        </div>
+    </div>
+</body>
+<script src="./methods.js"></script>
+</html>
